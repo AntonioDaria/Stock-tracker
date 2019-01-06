@@ -1,9 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+"This is the finance tracker app that allows a user to follow the stock market"
 
-Things you may want to cover:
+Things to cover:
 
 * Ruby version
 
