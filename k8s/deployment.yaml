@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stock-tracker-deployment
+  labels:
+    app: stock-tracker
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: stock-tracker
+  template:
+    metadata:
+      labels:
+        app: stock-tracker
+    spec:
+      containers:
+      - name: stock-tracker
+        image: eu.gcr.io/antonio-test-250514/stock-tracker-image:1.0.1
+        ports:
+        - containerPort: 3000
