@@ -6,6 +6,7 @@ ruby '2.5.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
+gem 'sqlite3'
 gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'jquery-rails'
@@ -13,6 +14,7 @@ gem 'devise-bootstrap-views'
 gem 'stock_quote'
 gem 'puma', '~> 3.11'
 gem "font-awesome-rails"
+gem "pg"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -41,7 +43,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'pg'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
