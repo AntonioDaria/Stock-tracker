@@ -12,7 +12,7 @@ gem 'twitter-bootstrap-rails'
 gem 'jquery-rails'
 gem 'devise-bootstrap-views'
 gem 'stock_quote'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 4.3'
 gem "font-awesome-rails"
 gem "pg"
 # Use SCSS for stylesheets
